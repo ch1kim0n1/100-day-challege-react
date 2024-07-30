@@ -1,11 +1,14 @@
+// DayBreak.jsx
 function DayBreak(props) {
     return (
         <div className="line">
             <div className="small-object-breaker">
-                <p className="breaktext">{props.day}+</p>
+                {props.day <= 99 ? (
+                    <p className="breaktext">{props.day}+</p>
+                ) : null}
             </div>
         </div>
     );
 }
 
-export default DayBreak
+export default DayBreak;
